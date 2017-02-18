@@ -14,6 +14,17 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
+## Tutorial Specific Changes
+
+Aight. Y'all need to change a few things.
+  * `config/dev.secret.exs`
+  Make a file that looks like the following containing a Wolfram Alpha App ID
+  ```text
+  use Mix.Config
+
+  config :rumbl, :wolfram, app_id: "12345-1234567890"
+  ```
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
