@@ -1,6 +1,7 @@
-# Rumbl
+# Rumbl/Rumbella
 
 Rumbl application from `Programming Phoenix Productive |> Reliable |> Fast` by Chris McCord, Bruce Tate, and José Valim
+* Refactored into an umbrella application as of Chapter 12
 
 To start your Phoenix app:
 
