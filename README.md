@@ -2,7 +2,7 @@
 
 Rumbl application from `Programming Phoenix Productive |> Reliable |> Fast` by Chris McCord, Bruce Tate, and José Valim
 * Book can be found at [pragprog.com](https://pragprog.com/book/phoenix/programming-phoenix)
-* Additional changes (for deprecation) was taken in part from [harfangk.github.io](https://harfangk.github.io/2016/10/09/programming-phoenix-example-code-issues.html)
+* Additional changes (for deprecation warnings) was taken in part from [harfangk.github.io](https://harfangk.github.io/2016/10/09/programming-phoenix-example-code-issues.html)
 * Refactored into an umbrella application as of Chapter 12 (hence the name Rumbl/Rumbella)
 
 ## Development & Production Configuration Secrets
@@ -14,7 +14,7 @@ Before your app will function correctly, you need to create two files:
   ```text
   use Mix.Config
 
-  config :rumbl, :wolfram, app_id: "12345-1234567890"
+  config :info_sys, :wolfram, app_id: "12345-1234567890"
   ```
 
   * `apps/rumbl/config/prod.secret.exs` (for production)
@@ -34,7 +34,13 @@ Before your app will function correctly, you need to create two files:
     database: "rumbl_prod",
     pool_size: 20
 
-  config :rumbl, :wolfram, app_id: "12345-1234567890"
+  config :info_sys, :wolfram, app_id: "12345-1234567890"
+  ```
+
+  To generate a new secret key run
+  ```bash
+  $ mix phoenix.gen.secret
+  xvafzY4y01jYuzLm3ecJqo008dVnU3CN4f+MamNd1Zue4pXvfvUjbiXT8akaIF53
   ```
 
 
