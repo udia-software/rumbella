@@ -1,12 +1,15 @@
 # Rumbl/Rumbella
 
 Rumbl application from `Programming Phoenix Productive |> Reliable |> Fast` by Chris McCord, Bruce Tate, and José Valim
-* Refactored into an umbrella application as of Chapter 12
+* Book can be found at [pragprog.com](https://pragprog.com/book/phoenix/programming-phoenix)
+* Additional changes (for deprecation) was taken in part from [harfangk.github.io](https://harfangk.github.io/2016/10/09/programming-phoenix-example-code-issues.html)
+* Refactored into an umbrella application as of Chapter 12 (hence the name Rumbl/Rumbella)
 
-## Development && Production Configuration Secrets
+## Development & Production Configuration Secrets
 Before your app will function correctly, you need to create two files:
 
   * `apps/rumbl/config/dev.secret.exs`
+
   Make a file that looks like the following containing a Wolfram Alpha App ID
   ```text
   use Mix.Config
@@ -15,6 +18,7 @@ Before your app will function correctly, you need to create two files:
   ```
 
   * `apps/rumbl/config/prod.secret.exs` (for production)
+
   Values are changed and do not reflect actual production strings
   ```text
   use Mix.Config
