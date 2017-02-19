@@ -19,8 +19,8 @@ defmodule Rumbl.VideoControllerTest do
 
   setup %{conn: conn} = config do
     if username = config[:login_as] do
-      user = insert_user(username: "max")
-      conn = assign(conn(), :current_user, user)
+      user = insert_user(username: username)
+      conn = assign(build_conn(), :current_user, user)
       {:ok, conn: conn, user: user}
     else
       :ok
@@ -29,7 +29,6 @@ defmodule Rumbl.VideoControllerTest do
 
   @valid_attrs %{url: "http://youtu.be", title: "vid", description: "a vid"}
   @invalid_attrs %{title: "invalid"}
-
   defp video_count(query), do: Repo.one(from v in query, select: count(v.id))
   @tag login_as: "max"
   test "creates user video and redirects", %{conn: conn, user: user} do

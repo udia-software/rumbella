@@ -17,7 +17,7 @@ defmodule Rumbl.UserTest do
 
   test "changeset does not accept long usernames" do
     attrs = Map.put(@valid_attrs, :username, String.duplicate("a", 30))
-    assert [{:username, "should be at most 20 character(s)"}] == errors_on(%User{}, attrs)
+    assert {:username, "should be at most 20 character(s)"} in errors_on(%User{}, attrs)
   end
 
   test "registration_changeset password must be at least 6 chars long" do
