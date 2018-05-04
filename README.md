@@ -1,5 +1,7 @@
 # Rumbl/Rumbella
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/udia-software/rumbella.svg)](https://greenkeeper.io/)
+
 Rumbl application from `Programming Phoenix Productive |> Reliable |> Fast` by Chris McCord, Bruce Tate, and José Valim
 * Book can be found at [pragprog.com](https://pragprog.com/book/phoenix/programming-phoenix)
 * Additional changes (for deprecation warnings) was taken in part from [harfangk.github.io](https://harfangk.github.io/2016/10/09/programming-phoenix-example-code-issues.html)
