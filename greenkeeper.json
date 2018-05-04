@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "apps/rumbl/package.json"
+      ]
+    }
+  }
+}
